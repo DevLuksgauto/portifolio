@@ -1,0 +1,32 @@
+.navBtn{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    padding: 1rem;
+}
+.navBtn:hover{
+    color: #000;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+@media (max-width: 1500px) {
+    .navBtn{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        color: #fff;
+        background: transparent;
+        border: none;
+        padding: 1rem;
+    }
+    .navBtn:hover{
+        color: #000;
+        background-color: #fff;
+        border-radius: 2rem;
+        padding: 1rem;
+        cursor: pointer;
+    }
+}

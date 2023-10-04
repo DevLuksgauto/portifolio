@@ -1,0 +1,8 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DevLuksgauto/portifolio.git",
+  "author": "Lucas Gauto <lukscgauto@gmail.com>",
+  "license": "MIT"
+}
