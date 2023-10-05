@@ -13,6 +13,7 @@
     background-color: #c4c4c4;
     width: 61px;
     height: 56px;
+    cursor: pointer;
 }
 @media (max-width: 1500px) {
     .container{
@@ -27,5 +28,6 @@
         box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.2);
         background-color: #c4c4c4;
         text-align: center;
+        cursor: pointer;
     }
 }
