@@ -6,7 +6,7 @@ interface LangState {
 }
 
 const initialState: LangState = {
-    changeLanguage: 0
+    changeLanguage: 1
 };
 
 const LanguageReducer: Reducer<LangState, ChangeLanguageAction> = (

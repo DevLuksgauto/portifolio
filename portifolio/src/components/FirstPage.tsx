@@ -12,7 +12,6 @@ import flagUK from '../assets/flagUK.png';
 import SocialLinksBtn from './SocialLinksBtn';
 import NavBar from './NavBar';
 
-
 const FirstPage: React.FC = () => {
 
     WebFontLoader.load({
@@ -30,18 +29,23 @@ const FirstPage: React.FC = () => {
     }, [dispatch]);
     
     const langBR = () => dispatch(ChangeLanguage());
-    const langUK = () => dispatch(ChangeLanguage());;
+    const langUK = () => dispatch(ChangeLanguage());
 
     return(
         <div className={classes.container}>
             <div className={classes.leftSide}>
                 <div className={classes.flagsContainer}>
+                    {
+                        lang === 0 ? (
                 <button onClick={langBR} className={classes.flagBtn}>
                     <img className={classes.flags} src={flagBR} alt="icone bandeira brasileira" />
                 </button>
+                        ) : (
                 <button onClick={langUK} className={classes.flagBtn}>
                     <img className={classes.flags} src={flagUK} alt="icone bandeira britânica" />
                 </button>
+                        )
+                    }
                 </div>
                 <h2>{data[lang]?.salute}</h2>
                 <h1>{data[lang]?.name}</h1>

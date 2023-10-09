@@ -1,0 +1,12 @@
+.inner{
+    width: 270vw;
+    height: 37vw;
+    display: flex;
+    gap: 3rem;
+}
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+    max-width: 1100vw;
+    margin: 1rem 0 1.3rem 1.5rem;
+}

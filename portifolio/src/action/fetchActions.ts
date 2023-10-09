@@ -10,7 +10,7 @@ export const fetchDataSuccess = (data: any): DataActionTypes => ({
 export const fetchData = (): any => {
     return async (dispatch: Dispatch<DataActionTypes>) => {
     try {
-        const response = await axios.get('https://run.mocky.io/v3/1032a241-f46a-4b04-a198-c9bde059608c');
+        const response = await axios.get('https://run.mocky.io/v3/6ef99fb1-5fd7-48ad-98a6-e234bc3abda3');
         dispatch(fetchDataSuccess(response.data));
         } catch (error) {
             console.error(error);
