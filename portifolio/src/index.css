@@ -1,8 +1,9 @@
 *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'DM Sans: 400,500,700', Montserrat;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
     background-color: #c4c4c4;

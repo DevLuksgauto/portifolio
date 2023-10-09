@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 .aboutme{
     margin: 6rem auto 0 auto;
@@ -38,7 +39,7 @@
     transition: transform 0.1s ease;
 }
 .subtitlesContainer{
-    margin-top: 4rem;
+    margin: 4rem auto 0 auto;
     width: 90vw;
     min-height: 60vh;
     display: flex;
@@ -57,27 +58,27 @@
 }
 .developmentH2{
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
-    padding: 20px; 
-
+    padding: 1rem; 
 }
 .maintenanceH2{
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
-    padding: 20px; 
+    padding: 1rem; 
 }
 .communicationH2{
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 1rem; 
 }
 .paragraph{
     color: #000;
     line-height: 3rem;
     font-weight: 100;
+    margin: auto;
 }
 
 .img{
@@ -117,20 +118,22 @@
         font-size: 2rem;
         font-weight: 600;
         text-transform: uppercase;
-        padding: 20px; 
-    
+        padding: 0.5rem; 
+        margin: auto;
     }
     .maintenanceH2{
         font-size: 2rem;
         font-weight: 600;
         text-transform: uppercase;
-        padding: 20px; 
+        margin: auto;
+        padding: 0.5rem;
     }
     .communicationH2{
         font-size: 2rem;
         font-weight: 600;
         text-transform: uppercase;
-        padding: 20px;
+        padding: 0.5rem;
+        margin: auto;
     }
     .paragraph{
         color: #000;

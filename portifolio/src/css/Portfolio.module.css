@@ -1,0 +1,10 @@
+.header{
+    width: 100vw;
+    height: 17.5rem;
+    margin-bottom: -0.3rem;
+}
+.container{
+    width: 100vw;
+    background-image: url('../assets/fundo2.jpg');
+    background-size: cover;
+}

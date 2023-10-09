@@ -1,0 +1,45 @@
+.container{
+    width: 100vw;
+    height: 30vh;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgsContainter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+.img{
+    background-color: #1A1A1A;
+}
+.imgsContainter button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.btnContainer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.btnContainer button{
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.rights{
+    margin: 0 auto 0 auto;
+    font-weight: 100;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
