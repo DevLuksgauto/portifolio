@@ -1,5 +1,5 @@
-import { useSelector } from "react-redux";
-import { RootState } from "../reducers";
+// import { useSelector } from "react-redux";
+// import { RootState } from "../reducers";
 import header from '../assets/SectionHeader.png';
 
 import classes from '../css/Portfolio.module.css';
