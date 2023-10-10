@@ -5,7 +5,7 @@ interface projectsProps {
   card: string;
 }
 
-const CarouselCard: React.FC<projectsProps>= (props) => {
+const CarouselCard: React.FC<projectsProps>= ( { card } ) => {
 
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -15,7 +15,7 @@ const CarouselCard: React.FC<projectsProps>= (props) => {
       }
     }
 
-    const isVideo = props.card.endsWith('.mp4');
+    const isVideo = card.endsWith('.mp4');
 
   return (
     <div>
@@ -25,11 +25,11 @@ const CarouselCard: React.FC<projectsProps>= (props) => {
             ref={videoRef}
             onMouseEnter={handleMouseEnter}
             onMouseOver={handleMouseEnter}
-            src={props.card}
+            src={card}
             typeof='video/mp4'></video>
           ) : (
             <img className={classes.picGif}
-                src={props.card}
+                src={card}
                 alt="algum projeto web em gif"/>
           )
         }

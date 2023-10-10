@@ -1,12 +1,28 @@
-.inner{
-    width: 270vw;
-    height: 37vw;
-    display: flex;
-    gap: 3rem;
+@media (min-width: 1423px) {
+    .inner{
+        width: 270vw;
+        height: 37vw;
+        display: flex;
+        gap: 3rem;
+    }
+    .carousel{
+        cursor: grab;
+        overflow: hidden;
+        max-width: 1100vw;
+        margin: 2rem 0 1.3rem 1.5rem;
+    }
 }
-.carousel{
-    cursor: grab;
-    overflow: hidden;
-    max-width: 1100vw;
-    margin: 1rem 0 1.3rem 1.5rem;
+@media (min-width: 2552px){
+    .inner{
+        width: 200vw;
+        height: 37vw;
+        display: flex;
+        gap: 3rem;
+    }
+    .carousel{
+        cursor: grab;
+        overflow: hidden;
+        max-width: 1100vw;
+        margin: 2rem 0 1.3rem 1.5rem;
+    }
 }

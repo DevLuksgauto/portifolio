@@ -6,17 +6,25 @@ import separator from '../assets/separatorBlack 1.png'
 import developmentPic from '../assets/development.png';
 import maintenancePic from '../assets/maintenance.png';
 import communicationPic from '../assets/communication.png';
+import { MouseEventHandler } from 'react';
 
 const AboutMe: React.FC = () => {
 
     const data = useSelector((state: RootState) => state.data.data);
     const lang = useSelector((state: RootState) => state.language.changeLanguage);
 
+    const handleGoTO: MouseEventHandler<HTMLButtonElement> = ()=> {
+        const targetElement = document.getElementById('explore');
+        if(targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     return(
-        <div className={classes.container}>
-            <h1 className={classes.aboutme}>{data[lang]?.aboutme}</h1>
+        <div id='aboutme' className={classes.container}>
+            <h1 className={classes.aboutme}>{data[lang]?.aboutme.toUpperCase()}</h1>
             <p className={classes.description}>{data[lang]?.description}</p>
-            <button className={classes.exploreBtn}>Explore</button>
+            <button id='explore' onClick={handleGoTO} className={classes.exploreBtn}>EXPLORE</button>
             <img className={classes.img} src={separator} alt="Separador de página" />
             <div className={classes.subtitlesContainer}>
                 <div className={classes.subContainer}>

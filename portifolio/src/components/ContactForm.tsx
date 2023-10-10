@@ -31,8 +31,8 @@ const ContactForm: React.FC = () => {
     }
 
     return(
-        <div className={classes.container}>
-            <h1 className={classes.contact}>{data[lang]?.contact}</h1>
+        <div id='contact' className={classes.container}>
+            <h1 className={classes.contact}>{data[lang]?.contact.toUpperCase()}</h1>
             <img className={classes.img} src={separator} alt="Separador de página" />
             <fieldset className={classes.form}>
                 <input
@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
             <button
                 onClick={handleSubmit}
                 className={classes.submit}
-                >{data[lang]?.button}</button>
+                >{data[lang]?.button.toUpperCase()}</button>
         </div>
     )
 };

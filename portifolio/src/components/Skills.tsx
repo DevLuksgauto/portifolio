@@ -43,10 +43,10 @@ const Skills: React.FC = () => {
     const lang = useSelector((state: RootState) => state.language.changeLanguage);
     
     return(
-        <div className={classes.container}>
-            <h1 className={classes.title}>{data[lang]?.skills[0]}</h1>
+        <div id="skills" className={classes.container}>
+            <h1 className={classes.title}>{data[lang]?.skills[0].toUpperCase()}</h1>
             <div className={classes.subcontainer}>
-                <p className={classes.subtitle}>{data[lang]?.skills[1]}:</p>
+                <p className={classes.subtitle}>{data[lang]?.skills[1].toUpperCase()}:</p>
                 <div className={classes.skillsContainer}>
                     {knownTechPics.map((item, index)=>{
                         return (
@@ -57,7 +57,7 @@ const Skills: React.FC = () => {
                         )
                     })}
                 </div>
-                    <p className={classes.subtitle}> {data[lang]?.skills[2]}:</p>
+                    <p className={classes.subtitle}> {data[lang]?.skills[2].toUpperCase()}:</p>
                 <div className={classes.skillsContainer}>
                     {learningTechPics.map((item, index)=>{
                         return (
@@ -68,7 +68,7 @@ const Skills: React.FC = () => {
                         )
                     })}
                 </div>
-                    <p className={classes.subtitle}>{data[lang]?.skills[3]}:</p>
+                    <p className={classes.subtitle}>{data[lang]?.skills[3].toUpperCase()}:</p>
                 <div className={classes.skillsContainer}>
                     {otherSkillsPics.map((item, index)=>{
                         return (
