@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../reducers';
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
-import { app } from '../services/firebaseConfig';
+// import { collection, getFirestore } from 'firebase/firestore';
+// import { app } from '../services/firebaseConfig';
 import { useState } from 'react';
 
 import classes from '../css/ContactForm.module.css';
@@ -17,8 +17,8 @@ const ContactForm: React.FC = () => {
     const [ phone, setPhone ] = useState('');
     const [ message, setMessage ] = useState('');
 
-    const db = getFirestore(app);
-    const ContactFormRef = collection(db, 'contactForm')
+    // const db = getFirestore(app);
+    // const ContactFormRef = collection(db, 'contactForm');
 
     // const  handleSubmit: () => void = async () => {
     //     const formDoc = await addDoc(ContactFormRef,{
