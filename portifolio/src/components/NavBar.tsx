@@ -6,7 +6,7 @@ interface LanguageProps {
 }
 const NavBar: React.FC<LanguageProps> = ( { lang } ) => {
 
-    const navButtonBR: string[] = ['Sobre mim', 'Skills', 'Portifólio', 'Contato'];
+    const navButtonBR: string[] = ['Sobre mim', 'Skills', 'Portfólio', 'Contato'];
     const navButtonUK: string[] = ['About me', 'Skills', 'Portfolio', 'Contact'];
     const goTo: string[] = ['aboutme', 'skills', 'portfolio', 'contact'];
 
