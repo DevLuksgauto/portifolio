@@ -36,5 +36,55 @@
     margin: 1rem auto 0 auto;
     font-size: 1rem;
     font-weight: 500;
+}
 
+@media((min-width: 360px) and (max-width: 414px)){
+    .title{
+        margin: 0rem auto 1.5rem auto;
+        border: solid  0.4rem #000;
+        font-size: 2rem;
+        padding: 2rem 4rem 2rem 4rem;
+    }
+    .container{
+        margin: auto;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .subcontainer{
+        width: 100%;
+        margin: 0 auto 0 auto;
+    }
+    .skillsContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+        margin: 3rem auto 2rem auto;
+    }
+    .subtitle{
+        color: #000;
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+    }
+    .techNames{
+        color: #000;
+        text-align: center;
+        margin: 0.7rem auto 0 auto;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .techWrap{
+        width: 6.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pics{
+        width: 3rem;
+    }
 }

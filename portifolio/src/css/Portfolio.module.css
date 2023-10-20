@@ -8,3 +8,22 @@
     background-image: url('../assets/fundo2.jpg');
     background-size: cover;
 }
+@media((min-width: 360px) and (max-width: 414px)){
+    .header{
+        /* margin-left: -48vw; */
+        width: 200vw;
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+    .container{
+        background-image: url('../assets/fundo2.jpg');
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+}

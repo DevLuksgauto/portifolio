@@ -15,36 +15,30 @@ import MobileFirstPage from './MobileFirstPage';
 
 const FirstPage: React.FC = () => {
 
-    WebFontLoader.load({
-        google: {
-        families: ['DM Sans: 400,500,700', 'Montserrat']
-        }
-    });
-
     const dispatch = useDispatch();
     const data = useSelector((state: RootState) => state.data.data);
     const lang = useSelector((state: RootState) => state.language.changeLanguage);
-    const [ isSmallScreen, setisSmallScreen] = useState<boolean>(false)
-    
-    useEffect(() => {
-        dispatch(fetchData());
-    }, [dispatch]);
+    const [isSmallScreen, setisSmallScreen] = useState<boolean>(window.innerWidth < 434);
 
     useEffect(() => {
+        dispatch(fetchData());
+
+        WebFontLoader.load({
+            google: {
+                families: ['DM Sans: 400,500,700', 'Montserrat'],
+            },
+        });
+
         const handleResize = () => {
-            if (window.innerWidth < 434) {
-            setisSmallScreen(true)
-            } else {
-                setisSmallScreen(false);
-            }
+            setisSmallScreen(window.innerWidth < 434);
         };
-    
+
         window.addEventListener('resize', handleResize);
 
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, [isSmallScreen]); 
+    }, [dispatch]);
 
     const langBR = () => dispatch(ChangeLanguage());
     const langUK = () => dispatch(ChangeLanguage());
