@@ -1,0 +1,9 @@
+.navBtn{
+    border-radius: 1rem;
+    border: 0.1rem solid #fff;
+    background: #fff;
+    width: 7rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}

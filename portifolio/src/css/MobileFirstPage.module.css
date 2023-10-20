@@ -1,0 +1,194 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.header{
+    margin: 0 auto 0 auto;
+    width: 95vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flagBtn{
+    width: 5rem;
+    background: transparent;
+    border: none;
+}
+.flags{
+    width: 3rem;
+    height: 3rem;
+}
+.infoContainer{
+    position: absolute;
+    width: 100vw;
+    bottom: 2rem;
+    z-index: 2;
+    color: #fff;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    max-width: 70vw;
+    max-height: 35vh;
+}
+.data1{
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+.data2{
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    text-align: left;
+    color: rgb(179, 177, 177);
+}
+.geometricContainer{
+    width: 100vw;
+    height: 35vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+}
+.inclinedDiv{
+    margin-top: 2rem;
+    background: rgb(87, 87, 87);
+    height: 20vh;
+    transform: skewY(-10deg);
+}
+.straightDiv{
+    position: absolute;
+    bottom: 0;
+    background: rgb(87, 87, 87);
+    width: 100vw;
+    height: 20vh;
+}
+.img{
+    position: absolute;
+    width: 120vw;
+    height: 90vh;
+    bottom: 0;
+    left: 2rem;
+}
+.meuPopUp{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 1s ease
+}
+
+@media(max-height: 667px){
+    .info{
+        max-width: 75vw;
+        max-height: 35vh;
+    }
+    .data1{
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .data2{
+        width: 100%;
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        text-align: left;
+        color: rgb(179, 177, 177);
+    }
+}
+
+@media(min-height: 812px){
+    .img{
+        position: absolute;
+        width: 125vw;
+        height: 85vh;
+        bottom: 0;
+        left: 2rem;
+    }
+    .info{
+        max-width: 75vw;
+        max-height: 35vh;
+    }
+    .data1{
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .data2{
+        width: 100%;
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        text-align: left;
+        color: rgb(179, 177, 177);
+    }
+}
+
+@media(min-height: 844px){
+    .info{
+        max-width: 75vw;
+        max-height: 35vh;
+    }
+    .data1{
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .data2{
+        width: 100%;
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        text-align: left;
+        color: rgb(179, 177, 177);
+    }
+}
+
+@media((width: 360px) and (height: 740px)){
+    .info{
+        max-width: 75vw;
+        max-height: 35vh;
+    }
+    .data1{
+        width: 100%;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .data2{
+        width: 100%;
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        text-align: left;
+        color: rgb(179, 177, 177);
+    }
+}
+
+@media((width: 414px) and (height: 896px)){
+    .info{
+        max-width: 75vw;
+        max-height: 35vh;
+    }
+    .data1{
+        width: 100%;
+        font-size: 3rem;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .data2{
+        width: 100%;
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        text-align: left;
+        color: rgb(179, 177, 177);
+    }
+}
