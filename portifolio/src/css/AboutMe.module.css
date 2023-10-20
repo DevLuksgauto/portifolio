@@ -164,3 +164,96 @@
         width: 5rem;
     }
 }
+
+@media((min-width: 360px) and (max-width: 414px)){
+    .container{
+        width: 95vw;
+        margin: 0 auto 0 auto;
+    }
+    .aboutme{
+        margin: 2rem auto 0 auto;
+        border: solid  0.4rem #000;
+        font-size: 2rem;
+        padding: 1rem 5rem 1rem 5rem;
+    }
+    .description{
+        margin: 1rem 0rem 1rem 0rem;
+        text-align: justify;
+        font-size: 1rem;
+        color: #000;
+        width: 90vw;
+        line-height: 1.7rem;
+        font-weight: 500;
+    }
+    .exploreBtn{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        border: solid  0.4rem #000;
+        border-style: none solid none solid;
+        background: transparent;
+        padding: 1rem 3rem 1rem 3rem;
+        cursor: pointer;
+        animation: blink 1.5s infinite alternate;
+    }
+    @keyframes blink {
+        0% {
+            background-color: transparent;
+            border-color: #000;
+        }
+        100% {
+            background-color: #909090;
+            border-color: #909090;
+        }
+    }
+    .exploreBtn:hover {
+        animation: none;
+        background-color: #909090;
+    }
+    .exploreBtn:active {
+        transform: translateY(2px);
+        transition: transform 0.1s ease;
+    }
+    .subtitlesContainer{
+        margin: 0 auto 0 auto;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .subContainer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: -4rem;
+    }
+    .developmentH2{
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .maintenanceH2{
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .communicationH2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .paragraph{
+        color: #000;
+        line-height: 1.7rem;
+        font-weight: 100;
+        margin: 0.7rem auto 0 auto;
+        font-size: 1rem;
+    }
+    .img{
+        margin: 1rem 0 1rem 0;
+        width: 40vw;
+    }
+    .titlePics{
+        width: 3.5rem;
+    }
+}

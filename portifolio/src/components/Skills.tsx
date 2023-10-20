@@ -50,8 +50,8 @@ const Skills: React.FC = () => {
                 <div className={classes.skillsContainer}>
                     {knownTechPics.map((item, index)=>{
                         return (
-                            <div key={index} >
-                                <img src={item} alt={`imagem da tecnologia ${item}`} />
+                            <div className={classes.techWrap} key={index} >
+                                <img className={classes.pics} src={item} alt={`imagem da tecnologia ${item}`} />
                                 <p className={classes.techNames}>{knownTech[index]}</p>
                             </div>
                         )
@@ -61,8 +61,8 @@ const Skills: React.FC = () => {
                 <div className={classes.skillsContainer}>
                     {learningTechPics.map((item, index)=>{
                         return (
-                            <div key={index} >
-                                <img key={index} src={item} alt={`imagem da tecnologia ${item}`} />
+                            <div className={classes.techWrap} key={index}>
+                                <img className={classes.pics} src={item} alt={`imagem da tecnologia ${item}`} />
                                 <p className={classes.techNames}>{learningTech[index]}</p>
                             </div>
                         )
@@ -72,8 +72,8 @@ const Skills: React.FC = () => {
                 <div className={classes.skillsContainer}>
                     {otherSkillsPics.map((item, index)=>{
                         return (
-                            <div key={index} >
-                                <img key={index} src={item} alt={`imagem da tecnologia ${item}`} />
+                            <div className={classes.techWrap} key={index}>
+                                <img className={classes.pics} src={item} alt={`imagem da tecnologia ${item}`} />
                                 <p className={classes.techNames}>{otherSkills[index]}</p>
                             </div>
                         )
