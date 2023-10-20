@@ -1,5 +1,5 @@
 import classes from '../css/FirstPage.module.css';
-import { MouseEventHandler, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../action/fetchActions';
 import { ChangeLanguage } from '../action/actionTypes'
@@ -11,7 +11,7 @@ import flagBR from '../assets/flagBR.png';
 import flagUK from '../assets/flagUK.png';
 import SocialLinksBtn from './SocialLinksBtn';
 import NavBar from './NavBar';
-import MobileAlert from './MobileAlert';
+import MobileFirstPage from './MobileFirstPage';
 
 const FirstPage: React.FC = () => {
 
@@ -24,30 +24,36 @@ const FirstPage: React.FC = () => {
     const dispatch = useDispatch();
     const data = useSelector((state: RootState) => state.data.data);
     const lang = useSelector((state: RootState) => state.language.changeLanguage);
+    const [ isSmallScreen, setisSmallScreen] = useState<boolean>(false)
     
     useEffect(() => {
         dispatch(fetchData());
     }, [dispatch]);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 434) {
+            setisSmallScreen(true)
+            } else {
+                setisSmallScreen(false);
+            }
+        };
     
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [isSmallScreen]); 
+
     const langBR = () => dispatch(ChangeLanguage());
     const langUK = () => dispatch(ChangeLanguage());
 
-    const [mobileAlert, setMobileAlert] = useState(true);
-
-    const mobileAlertHandler: MouseEventHandler  = () => {
-        if (mobileAlert === true) {
-            setMobileAlert(false);
-        } else {
-            setMobileAlert(true)
-        }
-    }
 
     return(
         <div>
-            {mobileAlert ? (
-                <MobileAlert mobileAlertHandler={mobileAlertHandler}/>
-            ) : (
-            <div className={classes.container}>
+            {isSmallScreen ? <MobileFirstPage/> :
+            (<div className={classes.container}>
                 <div className={classes.leftSide}>
                     <div className={classes.flagsContainer}>
                         {
@@ -71,7 +77,8 @@ const FirstPage: React.FC = () => {
                     <NavBar lang={lang}/>
                     <img className={classes.luksImg} src={luks} alt="foto Lucas Gauto" />
                 </div>
-            </div> )}
+            </div>)
+            }
         </div>
     )
 };

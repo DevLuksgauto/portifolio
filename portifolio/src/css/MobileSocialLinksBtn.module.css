@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1.5rem;
+}
+.linksBtn{
+    background: transparent;
+    border: none;
+}

@@ -1,0 +1,24 @@
+.header{
+    width: 100vw;
+    height: 38vh;
+    border-radius: 1rem 1rem 0 0;
+    background-color: rgba(196, 196, 196, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 80vw;
+    height: 30vh;
+}
+.closeBtn{
+    background: transparent;
+    border: none;
+    filter: brightness(0%);
+}
