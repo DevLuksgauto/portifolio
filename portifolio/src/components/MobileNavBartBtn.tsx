@@ -4,14 +4,16 @@ import classes from '../css/MobileNavBarBtn.module.css';
 interface NavBarButtonProps {
     typeBtn: string;
     goTo: string;
+    menuHandler: MouseEventHandler;
 }
 
-const MobileNavBarBtn: React.FC<NavBarButtonProps> = ( { typeBtn, goTo } ) => {
+const MobileNavBarBtn: React.FC<NavBarButtonProps> = ( { typeBtn, goTo, menuHandler } ) => {
 
-    const handleGoTO: MouseEventHandler<HTMLButtonElement> = ()=> {
+    const handleGoTO: MouseEventHandler<HTMLButtonElement> = (e)=> {
         const targetElement = document.getElementById(goTo);
         if(targetElement) {
             targetElement.scrollIntoView({ behavior: 'smooth' });
+            menuHandler(e);
         }
     }
 

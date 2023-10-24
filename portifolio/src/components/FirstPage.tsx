@@ -62,10 +62,12 @@ const FirstPage: React.FC = () => {
                             )
                         }
                     </div>
-                    <h2>{data[lang]?.salute}</h2>
-                    <h1>{data[lang]?.name}</h1>
-                    <p>{data[lang]?.job}</p>
-                    <SocialLinksBtn/>
+                    <div className={classes.allInfo}>
+                        <h2>{data[lang]?.salute}</h2>
+                        <h1>{data[lang]?.name}</h1>
+                        <p>{data[lang]?.job}</p>
+                        <SocialLinksBtn/>
+                    </div>
                 </div>
                 <div className={classes.rightSide}>
                     <NavBar lang={lang}/>
