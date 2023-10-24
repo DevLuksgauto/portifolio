@@ -21,20 +21,25 @@ const CarouselCard: React.FC<projectsProps>= ( { card } ) => {
     <div>
         <div className={classes.container}>
           {isVideo ? (
+            <div>
+
             <video className={classes.video}
             ref={videoRef}
             onMouseEnter={handleMouseEnter}
             onMouseOver={handleMouseEnter}
             src={card}
             typeof='video/mp4'></video>
+            </div>
           ) : (
+            <div>
+
             <img className={classes.picGif}
                 src={card}
                 alt="algum projeto web em gif"/>
+                </div>
           )
         }
         </div>
-      <p className={classes.roll}>-</p>
     </div>
   )
 };

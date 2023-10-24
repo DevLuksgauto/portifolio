@@ -1,3 +1,4 @@
+@media (min-width: 415px){
 .container{
     display: flex;
     flex-direction: column;
@@ -65,4 +66,67 @@
 .submit:active {
     transform: translateY(2px);
     transition: transform 0.1s ease;
+}
+}
+@media((min-width: 360px) and (max-width: 414px)){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+    }
+    .img{
+        width: 0.1px;
+    }
+    .contact{
+        margin: 1rem auto 1rem auto;
+        border: solid  0.4rem #000;
+        font-size: 2rem;
+        padding: 1rem 5rem 1rem 5rem;
+    }
+    .form{
+        width: 95vw;
+        height: 55vh;
+        border: none;
+    }
+    .input{
+        font-size: 1rem;
+        width: 95vw;
+        padding: 0.5rem;
+        background: transparent;
+        border: 0.3rem solid #000;
+        border-style: none none solid solid;
+
+    }
+    .input::placeholder{
+        position: absolute;
+        left: 1rem;
+    }
+    .form textarea {
+        align-self: flex-start;
+        justify-self: start;
+        width: 95vw;
+        height: 34vh;
+        text-wrap:wrap ;
+        white-space: pre-wrap;
+        overflow-wrap: break-word; 
+    }
+    .submit{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1rem auto 0.5rem auto;
+        border: solid  0.5rem #000;
+        border-style: none solid none solid;
+        background: transparent;
+        padding: 1rem 3rem 1rem 3rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .submit:hover {
+        background-color: #909090;
+    }
+    .submit:active {
+        transform: translateY(2px);
+        transition: transform 0.1s ease;
+    }
 }

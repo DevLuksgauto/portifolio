@@ -1,30 +1,11 @@
-.container{
-    width: 100%;
-    height: 100%;
-    border-radius: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.roll{
-    margin: 1rem auto 0 auto;
-    background-color: #c4c4c4;
-    color: #c4c4c4;
-    width: 30%;
-    border-radius: 1rem;
-}
-.video{
-    width: 100%;
-    height: 100%;
-}
-.picGif{
-    width: 100%;
-    height: 100%;
-}
-@media((min-width: 360px) and (max-width: 414px)){
+@media(min-width: 415px){
     .container{
-        width: 90%;
-        background-color: blue;
+        width: 100%;
+        height: 100%;
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .roll{
         margin: 1rem auto 0 auto;
@@ -34,10 +15,27 @@
         border-radius: 1rem;
     }
     .video{
+        width: 100%;
+        height: 100%;
+    }
+    .picGif{
+        width: 100%;
+        height: 100%;
+    }
+}
+    @media((min-width: 360px) and (max-width: 414px)){
+    .container{
+        width: 95vw;
+        /* border-radius: 2rem; */
+        /* background-color: red; */
+    }
+    .video{
         width: 100vw;
-        height: 65vh;
+        height: 40vh;
+        cursor: grab;
     }
     .picGif{
         width: 100vw;
+        height: 31vh;
     }
 }

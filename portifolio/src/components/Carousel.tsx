@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import classes from '../css/Carousel.module.css';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 import v1 from '../assets/SoundApp.mp4';
 import v2 from '../assets/PlantSale.mp4';
@@ -13,43 +12,33 @@ import CarouselCard from './CarouselCard';
 const Carousel: React.FC = () => {
   const [width, setWidth] = useState(0);
   const carousel: any = useRef();
-  const [isCarouselVisible, setIsCarouselVisible] = useState(false);
 
   const projects: any[] = [v1, v2, v3, v4, v5];
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
 
   useEffect(() => {
-      setWidth(carousel.current ? carousel.current.scrollWidth - carousel.current.offsetWidth : 0);
-  }, []);
+    const SetWidth = async () => {
+    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+    console.log(width)
+    };    
+    SetWidth();
+}, []);
 
-  useEffect(() => {
-    setIsCarouselVisible(inView);
-  }, [inView]);
-
-  return (
+return (
     <Fragment>
-      <div ref={(node) => { ref(node); carousel.current = node; }} className={classes.carousel}>
-        <motion.div
-          className={classes.inner}
+      <motion.div ref={carousel} className={classes.carousel}>
+        <motion.div className={classes.inner}
           drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          initial={{ x: 200 }}
-          animate={{ x: isCarouselVisible ? 0 : 200 }}
-          transition={{ duration: 0.6 }}
-        >
-          {isCarouselVisible &&
-            projects.map((card) => {
-              return (
-                <motion.div key={Math.random()}>
+          dragConstraints={{ right: 850, left: - 900 }}
+          dragElastic={0.8}
+          initial={{ x: 800 }}
+          >
+            {projects.map(card => (
+                <motion.div className={classes.teste} key={Math.random()}>
                   <CarouselCard card={card} />
                 </motion.div>
-              );
-            })}
+              ))}
         </motion.div>
-      </div>
+      </motion.div>
     </Fragment>
   );
 };
