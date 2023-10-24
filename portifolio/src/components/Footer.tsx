@@ -1,10 +1,12 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../reducers';
 import classes from '../css/Footer.module.css';
+
 import face from '../assets/facebookFooter.png';
 import linkedin from '../assets/linkedinFooter.png';
 import insta from '../assets/instaFooter.png';
 import mail from '../assets/mailFooter.png';
+import whatsApp from '../assets/whatsappWhite.png';
 import arrow from '../assets/upArrow.png';
 import { useEffect, useRef } from 'react';
 
@@ -38,6 +40,7 @@ const Footer: React.FC = () => {
     const instaLink: () => void = () => window.open('https://www.instagram.com/luksgauto/', '_blank');
     const facebook: () => void = () => window.open('https://www.facebook.com/lucas.gauto.7', '_blank');
     const linkedinLink: () => void = () => window.open('https://www.linkedin.com/in/devluksgauto/', '_blank');
+    const whatsAppLink: () => void = () => window.open('https://wa.me/5551993143439', '_blank');
     const handleEmailButtonClick = () => {
         const email = 'lucascorreagauto@gmail.com';
         const subject = 'Contato direto do Portifólio';
@@ -57,6 +60,7 @@ const Footer: React.FC = () => {
                 <button onClick={linkedinLink}><img className={classes.img} src={linkedin} alt="logo linkedin" /></button>
                 <button onClick={instaLink}><img className={classes.img} src={insta} alt="logo instagram" /></button>
                 <button onClick={handleEmailButtonClick}><img className={classes.img} src={mail} alt="imagem de envelope de email" /></button>
+                <button onClick={whatsAppLink} className={classes.linksBtn}><img src={whatsApp} alt="ícone WhatsApp"/></button>
             </div>
             <p className={classes.rights}>@2023 Lucas Gauto - {data[lang]?.rights}.</p>
         </div>

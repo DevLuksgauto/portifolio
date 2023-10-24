@@ -19,10 +19,10 @@ const MobileMenu: React.FC<LanguageProps> = ( { lang, menuHandler } ) => {
             <div className={classes.header}>
                     <button className={classes.closeBtn} onClick={menuHandler}><img src={close} alt="close icon" /></button>
                 <div className={classes.subContainer}>
-                    <MobileNavBarBtn typeBtn={lang === 1 ? navButtonBR[0] : navButtonUK[0]} goTo={goTo[0]}/>
-                    <MobileNavBarBtn typeBtn={lang === 1 ? navButtonBR[1] : navButtonUK[1]} goTo={goTo[1]}/>
-                    <MobileNavBarBtn typeBtn={lang === 1 ? navButtonBR[2] : navButtonUK[2]} goTo={goTo[2]}/>
-                    <MobileNavBarBtn typeBtn={lang === 1 ? navButtonBR[3] : navButtonUK[3]} goTo={goTo[3]}/>
+                    <MobileNavBarBtn typeBtn={lang === 1 ? navButtonBR[0] : navButtonUK[0]} goTo={goTo[0]} menuHandler={menuHandler}/>
+                    <MobileNavBarBtn typeBtn={lang === 1 ? navButtonBR[1] : navButtonUK[1]} goTo={goTo[1]} menuHandler={menuHandler}/>
+                    <MobileNavBarBtn typeBtn={lang === 1 ? navButtonBR[2] : navButtonUK[2]} goTo={goTo[2]} menuHandler={menuHandler}/>
+                    <MobileNavBarBtn typeBtn={lang === 1 ? navButtonBR[3] : navButtonUK[3]} goTo={goTo[3]} menuHandler={menuHandler}/>
                 </div>
             </div>
         </>
