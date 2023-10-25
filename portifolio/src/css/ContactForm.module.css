@@ -32,22 +32,30 @@
     border-style: none none solid solid;
     padding: 1.8rem;
 }
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
 .input::placeholder{
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     left: 2rem;
 }
 .form textarea {
     align-self: flex-start;
     justify-self: start;
+    padding-top: 1rem;
     padding-bottom: 15rem;
     max-width: 40vw;
     min-width: 40vw;
     max-height: 29vh;
     text-wrap:wrap ;
-    white-space: pre-wrap;
-    overflow-wrap: break-word; 
     overflow: hidden;
+    line-height: 2rem;
+}
+.form textarea:focus {
+    outline: none;
+    box-shadow: none;
 }
 .submit{
     font-size: 3rem;
@@ -93,10 +101,14 @@
         font-size: 1rem;
         width: 95vw;
         padding: 0.5rem;
+        padding-left: 1rem;
         background: transparent;
         border: 0.3rem solid #000;
         border-style: none none solid solid;
-
+    }
+    input:focus {
+        outline: none;
+        box-shadow: none;
     }
     .input::placeholder{
         position: absolute;
@@ -111,6 +123,10 @@
         white-space: pre-wrap;
         overflow-wrap: break-word; 
     }
+    .form textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
     .submit{
         font-size: 1.5rem;
         font-weight: 600;
