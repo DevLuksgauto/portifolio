@@ -2,9 +2,18 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 .linksBtn{
     background: transparent;
     border: none;
+}
+
+@media screen and (min-width: 375px) and (min-height: 812px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2.2rem;
+    }
 }

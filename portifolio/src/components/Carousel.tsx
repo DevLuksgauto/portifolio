@@ -99,8 +99,7 @@ const Carousel: React.FC = () => {
   useEffect(() => {
     const SetWidth = async () => {
       setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
-      console.log(width);
-    };    
+    };
     SetWidth();
   }, []);
 

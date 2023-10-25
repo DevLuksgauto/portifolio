@@ -35,7 +35,7 @@
 }
 .info{
     max-width: 70vw;
-    max-height: 35vh;
+    align-self: flex-end;
 }
 .data1{
     width: 100%;
@@ -45,7 +45,7 @@
 }
 .data2{
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
     text-align: left;
     color: rgb(179, 177, 177);
@@ -86,107 +86,20 @@
     transition: opacity 1s ease
 }
 
-@media(max-height: 667px){
+@media screen and (min-width: 375px) and (min-height: 812px) {
     .info{
-        max-width: 75vw;
-        max-height: 35vh;
+        max-width: 80vw;
+        align-self: flex-end;
     }
     .data1{
         width: 100%;
-        font-size: 2rem;
-        margin-bottom: 0;
-        text-align: left;
+        font-size: 2.7rem;
+        margin-bottom: 1rem;
+        line-height: 2.6rem;
     }
     .data2{
         width: 100%;
-        font-size: 1.4rem;
-        margin-bottom: 0;
-        text-align: left;
-        color: rgb(179, 177, 177);
-    }
-}
-
-@media(min-height: 812px){
-    .img{
-        position: absolute;
-        width: 125vw;
-        height: 85vh;
-        bottom: 0;
-        left: 2rem;
-    }
-    .info{
-        max-width: 75vw;
-        max-height: 35vh;
-    }
-    .data1{
-        width: 100%;
-        font-size: 2rem;
-        margin-bottom: 0;
-        text-align: left;
-    }
-    .data2{
-        width: 100%;
-        font-size: 1.4rem;
-        margin-bottom: 0;
-        text-align: left;
-        color: rgb(179, 177, 177);
-    }
-}
-
-@media(min-height: 844px){
-    .info{
-        max-width: 75vw;
-        max-height: 35vh;
-    }
-    .data1{
-        width: 100%;
-        font-size: 2rem;
-        margin-bottom: 0;
-        text-align: left;
-    }
-    .data2{
-        width: 100%;
-        font-size: 1.4rem;
-        margin-bottom: 0;
-        text-align: left;
-        color: rgb(179, 177, 177);
-    }
-}
-
-@media((width: 360px) and (height: 740px)){
-    .info{
-        max-width: 75vw;
-        max-height: 35vh;
-    }
-    .data1{
-        width: 100%;
-        font-size: 2.5rem;
-        margin-bottom: 0;
-        text-align: left;
-    }
-    .data2{
-        width: 100%;
-        font-size: 1.4rem;
-        margin-bottom: 0;
-        text-align: left;
-        color: rgb(179, 177, 177);
-    }
-}
-
-@media((width: 414px) and (height: 896px)){
-    .info{
-        max-width: 75vw;
-        max-height: 35vh;
-    }
-    .data1{
-        width: 100%;
-        font-size: 3rem;
-        margin-bottom: 0;
-        text-align: left;
-    }
-    .data2{
-        width: 100%;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         margin-bottom: 0;
         text-align: left;
         color: rgb(179, 177, 177);
