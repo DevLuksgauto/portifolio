@@ -12,35 +12,6 @@
         max-width: 1100vw;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* NÃO MEXER */
 @media((min-width: 360px) and (max-width: 414px)){
     .inner{
@@ -48,6 +19,7 @@
         /* background-color: green; */
     }
     .carousel{
+        margin-top: -5rem;
         overflow: hidden;
         max-width: 510vw;
     }

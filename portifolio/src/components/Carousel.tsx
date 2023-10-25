@@ -44,9 +44,9 @@ return (
         <motion.div ref={carousel} className={classes.carousel}>
         <motion.div className={classes.inner}
           drag="x"
-          dragConstraints={{ right: 850, left: - 900 }}
+          dragConstraints={{ right: 200, left: - 1500 }}
           dragElastic={0.8}
-          initial={{ x: 800 }}
+          initial={{ x: 180 }}
           >
             {projects.map(card => (
               <motion.div className={classes.teste} key={Math.random()}>
