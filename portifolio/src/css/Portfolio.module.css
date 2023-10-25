@@ -7,22 +7,25 @@
     width: 100vw;
     background-image: url('../assets/fundo2.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+/* NÃO MEXER */
 @media((min-width: 360px) and (max-width: 414px)){
     .header{
-        /* margin-left: -48vw; */
         width: 200vw;
         height: 10rem;
-        margin-bottom: 1rem;
     }
     .container{
         background-image: url('../assets/fundo2.jpg');
         background-size: cover;
         width: 100vw;
-        height: 65vh;
+        height: 25rem;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
     }
 }
